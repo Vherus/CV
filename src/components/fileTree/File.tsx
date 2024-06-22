@@ -9,8 +9,8 @@ interface Props {
 
 export default function File({ icon, label, linkTo }: Props) {
   return (
-    <li className='explorer-item text-lg'>
-      <Link href={linkTo}>
+    <li className='explorer-item'>
+      <Link href={linkTo} className='py-1.5 text-base'>
         {icon} {label}
       </Link>
     </li>

@@ -9,7 +9,7 @@ interface Props extends PropsWithChildren {
 export default function Directory({ children, header, isOpen = true }: Props) {
   return (
     <details open={isOpen}>
-      <summary>
+      <summary className='text-base'>
         <DirectorySVG /> {header}
       </summary>
 

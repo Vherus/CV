@@ -1,3 +1,8 @@
 .explorer-item img {
   height: 20px;
 }
+
+.fe-bg-dark {
+  background-color: #181818;
+  border-right: 1px solid #2B2B2B;
+}
