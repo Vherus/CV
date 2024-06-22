@@ -1,6 +1,4 @@
-import tsIcon from './assets/icons/ts.png'
-import './App.css'
-import DirectorySVG from './components/svg/DirectorySVG'
+import Sidebar from './components/layout/Sidebar'
 
 export default function App() {
   return (
@@ -12,33 +10,7 @@ export default function App() {
         <p>Main</p>
       </main>
 
-      <aside className="drawer-side">
-        <ul className="menu menu-xs bg-base-200 rounded-lg max-w-xs w-60 h-full">
-          <li><label htmlFor="drawer-toggle" aria-label="close sidebar" className="drawer-overlay lg:hidden">Close</label></li>
-
-          <li>
-            <details open>
-              <summary>
-                <DirectorySVG /> src
-              </summary>
-
-              <ul>
-                <li className='explorer-item'>
-                  <a>
-                    <img src={tsIcon} />experience.ts
-                  </a>
-                </li>
-                <li className='explorer-item'>
-                  <a>
-                    <img src={tsIcon} />experience.spec.ts
-                  </a>
-                </li>
-              </ul>
-            </details>
-          </li>
-        </ul>
-      
-      </aside>
+      <Sidebar />
     </div>
   )
 }
