@@ -9,7 +9,7 @@ interface Props {
 
 export default function File({ icon, label, linkTo }: Props) {
   return (
-    <li className='explorer-item'>
+    <li className='explorer-item text-lg'>
       <Link href={linkTo}>
         {icon} {label}
       </Link>

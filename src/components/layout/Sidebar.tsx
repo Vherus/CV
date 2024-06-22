@@ -1,7 +1,7 @@
 import tsIcon from '../../assets/icons/ts.png'
-import Directory from '../menu/Directory'
-import File from '../menu/File'
-import FileExplorer from '../menu/FileExplorer'
+import Directory from '../fileTree/Directory'
+import File from '../fileTree/File'
+import FileExplorer from '../fileTree/FileExplorer'
 import './sidebar.css'
 
 export default function Sidebar() {
