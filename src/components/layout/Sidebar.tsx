@@ -11,8 +11,8 @@ export default function Sidebar() {
         <label htmlFor="drawer-toggle" aria-label="close sidebar" className="drawer-overlay lg:hidden">Close</label>
 
         <Directory header='src'>
-          <File icon={<img src={tsIcon} />} label='experience.ts' />
-          <File icon={<img src={tsIcon} />} label='experience.spec.ts' />
+          <File icon={<img src={tsIcon} />} label='experience.ts' linkTo='/' />
+          <File icon={<img src={tsIcon} />} label='about.ts' linkTo='/about' />
         </Directory>
       </FileExplorer>
     </aside>

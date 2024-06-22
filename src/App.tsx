@@ -7,19 +7,21 @@ export default function App() {
     <div className="drawer h-full lg:drawer-open">
       <input id="drawer-toggle" type="checkbox" className="drawer-toggle" />
 
-      <Switch>
-        <Route path='/'>
-          <PageContainer>
-            <p>Main</p>
-          </PageContainer>
-        </Route>
+      <PageContainer>
+        <Switch>
+          <Route path='/'>
+              <p>Main</p>
+          </Route>
 
-        <Route>
-          <PageContainer>
-            <p>404!</p>
-          </PageContainer>
-        </Route>
-      </Switch>
+          <Route path='/about'>
+              <p>About</p>
+          </Route>
+
+          <Route>
+              <p>404!</p>
+          </Route>
+        </Switch>
+      </PageContainer>
 
       <Sidebar />
     </div>
