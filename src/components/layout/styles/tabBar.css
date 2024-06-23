@@ -1,0 +1,24 @@
+.tab-bar {
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.tab-bar img {
+  height: 18px;
+}
+
+.tab {
+  background-color: var(--color-grey-darker);
+  border-right: 1px solid var(--color-grey) !important;
+}
+
+.tab:hover {
+  color: #fff !important;
+  background-color: var(--color-grey-dark) !important;
+}
+
+.tab-selected, .tab-selected:hover {
+  color: #fff !important;
+  background-color: var(--color-grey-dark) !important;
+  border-top: 1px solid var(--color-blue-primary) !important;
+}
+

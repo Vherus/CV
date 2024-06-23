@@ -1,6 +1,9 @@
 import PageContainer from './components/layout/PageContainer'
 import Sidebar from './components/layout/Sidebar'
 import { Route, Switch } from 'wouter'
+import AboutPage from './pages/About.page'
+import NotFoundPage from './pages/NotFound.page'
+import ExperiencePage from './pages/Experience.page'
 
 export default function App() {
   return (
@@ -10,15 +13,15 @@ export default function App() {
       <PageContainer>
         <Switch>
           <Route path='/'>
-              <p>Main</p>
+            <ExperiencePage />
           </Route>
 
           <Route path='/about'>
-              <p>About</p>
+              <AboutPage />
           </Route>
 
           <Route>
-              <p>404!</p>
+              <NotFoundPage />
           </Route>
         </Switch>
       </PageContainer>

@@ -1,5 +1,5 @@
 import { PropsWithChildren, ReactNode } from 'react'
-import './fileExplorer.css'
+import './styles/fileExplorer.css'
 
 export default function FileExplorer({ children }: PropsWithChildren) {
   return (

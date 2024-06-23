@@ -1,5 +1,5 @@
 import { Link } from 'wouter'
-import './fileExplorer.css'
+import './styles/fileExplorer.css'
 
 interface Props {
   icon: JSX.Element
