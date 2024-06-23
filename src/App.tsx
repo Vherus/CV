@@ -8,7 +8,7 @@ import ExperiencePage from './pages/Experience.page'
 export default function App() {
   return (
     <div className="drawer h-full lg:drawer-open">
-      <input id="drawer-toggle" type="checkbox" className="drawer-toggle" />
+      <input type="checkbox" className="drawer-toggle" />
 
       <PageContainer>
         <Switch>

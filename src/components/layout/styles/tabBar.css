@@ -18,6 +18,7 @@
 
 .tab-selected, .tab-selected:hover {
   color: #fff !important;
+  z-index: 999;
   background-color: var(--color-grey-dark) !important;
   border-top: 1px solid var(--color-blue-primary) !important;
 }
