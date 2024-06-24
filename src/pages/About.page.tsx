@@ -1,12 +1,14 @@
 export default function AboutPage() {
   return (
     <article>
-      <p className="mb-3">This app is a WIP but please feel free to browse the github repositories:</p>
+      <p className="mb-3">This project is a WIP but please feel free to browse the github repositories:</p>
       <ul className="mb-3">
+        <li className="mb-1">
+          <a className="color-keyword" href="https://github.com/vherus/cv-server" target="_blank">Server (Express, Typescript)</a>
+          <p><em>object oriented, repository pattern, zod for request validation, jest suite</em></p>
+        </li>
         <li><a className="color-keyword" href="https://github.com/vherus/cv" target="_blank">Client (React, Typescript, Tailwind)</a></li>
-        <li><a className="color-keyword" href="https://github.com/vherus/cv-server" target="_blank">Server (Express, Typescript)</a></li>
       </ul>
-      <p>Please note that these are incomplete. I will be adding polish, tests, Context, a Postgres DB and perhaps an ORM like Prisma.</p>
     </article>
   )
 }
