@@ -18,7 +18,7 @@ export default function ExperienceBlock({ experience, showBreak }: Props) {
       <h3 className="color-entity text-lg font-code">
         <span className="color-keyword">company </span>
         {experience.company}
-        <em className="color-comment font-normal"> // {experience.date}</em>
+        <em className="color-comment font-normal"> // {experience.dateFrom} - {experience.dateTo}</em>
       </h3>
 
       {experience.description.split('\n\n').map((desc, i) => (<p key={`exp-${experience.id}-desc-${i}`} className="text-lg py-1">{desc}</p>))}
