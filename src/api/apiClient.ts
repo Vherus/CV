@@ -9,7 +9,7 @@ export interface Experience {
 }
 
 export async function getExperience(): Promise<Experience[]> {
-  const res = await fetch('http://localhost:3000/experience')
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/experience`)
   const json = await res.json()
 
   return json.data
