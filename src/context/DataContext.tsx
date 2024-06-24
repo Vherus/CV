@@ -15,13 +15,17 @@ export const DataProvider = ({ children }: PropsWithChildren) => {
   const [isLoading, setIsLoading] = useState(true)
   const [experience, setExperience] = useState<Experience[]>([])
 
-  useEffect(() => {
-    getExperience()
-      .then((exp) => setIsLoading((_) => {
-        setExperience(exp)
+  async function loadData() {
+    const exp = await getExperience()
 
-        return false
-      }))
+    setIsLoading((_) => {
+      setExperience(exp)
+      return false
+    })
+  }
+
+  useEffect(() => {
+    loadData()
   }, [])
 
   const value = {
