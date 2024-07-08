@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-    <article>
+    <section>
       <p className="mb-3">This project is a WIP but please feel free to browse the github repositories:</p>
       <ul className="mb-3">
         <li className="mb-3">
@@ -9,6 +9,6 @@ export default function AboutPage() {
         </li>
         <li><a className="color-keyword" href="https://github.com/vherus/cv" target="_blank">Client (React, Typescript, Tailwind)</a></li>
       </ul>
-    </article>
+    </section>
   )
 }
