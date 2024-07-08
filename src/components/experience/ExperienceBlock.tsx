@@ -5,6 +5,12 @@ interface Props {
   showBreak: boolean
 }
 
+const decodeUnicode = (input: string) => {
+  return input.replace(/(&#(\d+);)/g, (_match, _capture, charCode) => {
+    return String.fromCharCode(charCode)
+  })
+}
+
 export default function ExperienceBlock({ experience, showBreak }: Props) {
   return (
     <article key={experience.id} className="p-4 pt-2">
@@ -21,8 +27,10 @@ export default function ExperienceBlock({ experience, showBreak }: Props) {
         <em className="color-comment font-normal"> // {experience.dateFrom} - {experience.dateTo}</em>
       </h3>
 
-      {experience.description.split('\n\n').map((desc, i) => (<p key={`exp-${experience.id}-desc-${i}`} className="text-lg py-1">{desc}</p>))}
-
+      <ul>
+        {decodeUnicode(experience.description).split('\n\n').map((desc, i) => (<li key={`exp-${experience.id}-desc-${i}`} className="text-lg py-1">{desc}</li>))}
+      </ul>
+      
       <small className="color-string text-base font-code">{experience.tech.join(', ')}</small>
     </article>
   )
